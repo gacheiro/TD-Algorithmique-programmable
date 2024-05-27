@@ -93,7 +93,7 @@ séquence_aléatoire = random.sample(liste_des_villes, len(liste_des_villes))
 
 4. Implémentez une méthode d’énumération - on énumère tous les itinéraires possible et on renvoie le plus court.
 
-💡 En Python, l’ensemble des permutations d’une liste peut être obtenu avec la fonction `itertools.permuations`. Par example :
+💡 En Python, l’ensemble des permutations d’une liste peut être obtenu avec la fonction `itertools.permutations`. Par example :
 ```python
 import itertools
 ...
