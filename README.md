@@ -63,7 +63,7 @@ Ensuite, pour récupérer la distance entre deux villes comme 0 (Paris) et 9 (Le
 dist = matrices_des_distances[0][9]
 ```
 
-## Modéliser les données du probème.
+## Modéliser les données du problème.
 
 1. Définissez une classe **Ville** contenant un identifiant et un nom de ville :
     1. Implémentez le constructeur prenant l'identifiant et le nom de la ville en paramètres.
