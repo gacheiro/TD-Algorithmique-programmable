@@ -1,3 +1,10 @@
+# TD 6 (première partie)
+
+- Objectifs : Modéliser et résoudre un problème de Recherche Opérationnelle, implémenter des heuristiques et vérifier expérimentalement la complexité algorithmique.
+- Règles de base : Sauvegardez votre fichier régulièrement ; soyez rigoureux sur le nommage des classes, des variables et méthodes, etc. ; visez la simplicité ; testez le code, décomposez-le en fonctions / méthodes et ajoutez des commentaires.
+- Activités demandées : Implémentez des classes et des heuristiques pour la résolution d’un problème de livraison de journaux.
+- Remise de ce TD : Le TD sera évalué en contrôle continu à la fin de la séance de TD. Le travail réalisé devra également être déposé sur Eurêka. N'oubliez pas d'indiquer votre nom en commentaire au début du code source.
+
 # Vacances en France
 
 Paul et Laura sont un couple heureux qui vient en France pour leurs vacances. Leur plan est de louer une voiture et de passer leurs vacances à parcourir la France en visitant une liste de villes touristiques. Comme certaines des villes sont éloignées les unes des autres, ils souhaitent trouver le meilleur itinéraire (l'itinéraire avec la distance minimale) pour visiter toutes les villes de leur liste.
