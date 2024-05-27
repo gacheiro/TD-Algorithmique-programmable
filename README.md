@@ -2,8 +2,8 @@
 
 - Objectifs : Modéliser et résoudre un problème de Recherche Opérationnelle, implémenter des heuristiques et vérifier expérimentalement la complexité algorithmique.
 - Règles de base : Sauvegardez votre fichier régulièrement ; soyez rigoureux sur le nommage des classes, des variables et méthodes, etc. ; visez la simplicité ; testez le code, décomposez-le en fonctions / méthodes et ajoutez des commentaires.
-- Activités demandées : Implémentez des classes et des heuristiques pour la résolution d’un problème de livraison de journaux.
-- Remise de ce TD : Le TD sera évalué en contrôle continu à la fin de la séance de TD. Le travail réalisé devra également être déposé sur Eurêka. N'oubliez pas d'indiquer votre nom en commentaire au début du code source.
+- Activités demandées : Implémentez des classes et des heuristiques pour la résolution du **Problème de Voyageur de Commerce**.
+- Remise de ce TD : Le TD sera évalué en contrôle continu à la fin de la séance de TD. Le travail réalisé devra également être **déposé sur Eurêka**. N'oubliez pas d'indiquer votre nom en commentaire au début du code source.
 
 # Vacances en France
 
