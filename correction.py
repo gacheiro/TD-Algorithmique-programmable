@@ -1,4 +1,5 @@
 import random
+from itertools import permutations
 
 # Classe Ville
 class Ville:
@@ -69,7 +70,6 @@ class Algorithme:
         return Trajet(self.instance, ordre_visite)
 
     def enumeration(self):
-        from itertools import permutations
         villes = range(len(self.instance.villes))
         min_distance = float('inf')
         meilleur_trajet = None
@@ -84,20 +84,20 @@ class Algorithme:
 # Test des heuristiques
 def tester_heuristiques():
     # Création des objets Ville
-    villes = [Ville(i, nom) for i, nom in enumerate(["Paris", "Lyon", "Marseille", "Toulouse", "Nice", "Nantes", "Strasbourg", "Montpellier", "Bordeaux", "Lille"])]
+    villes = [Ville(i, nom) for i, nom in enumerate(["Paris", "Nice", "Lyon", "Marseille", "Bordeaux", "Toulouse", "Strasbourg", "Lille", "Nantes", "Le Havre"])]
 
     # Matrice des distances (exemple)
     matrice_des_distances = [
-        [0, 465, 775, 680, 930, 385, 490, 750, 585, 230],
-        [465, 0, 315, 370, 475, 560, 385, 305, 500, 645],
-        [775, 315, 0, 400, 205, 705, 745, 125, 605, 910],
-        [680, 370, 400, 0, 470, 465, 920, 240, 245, 830],
-        [930, 475, 205, 470, 0, 820, 665, 325, 780, 1150],
-        [385, 560, 705, 465, 820, 0, 765, 545, 340, 610],
-        [490, 385, 745, 920, 665, 765, 0, 800, 935, 485],
-        [750, 305, 125, 240, 325, 545, 800, 0, 485, 885],
-        [585, 500, 605, 245, 780, 340, 935, 485, 0, 800],
-        [230, 645, 910, 830, 1150, 610, 485, 885, 800, 0]
+        [0, 930, 465, 775, 584, 678, 492, 231, 385, 200],  # Paris
+        [930, 0, 470, 200, 645, 470, 1025, 1160, 860, 950], # Nice
+        [465, 470, 0, 315, 540, 540, 490, 645, 600, 730],  # Lyon
+        [775, 200, 315, 0, 505, 400, 800, 1000, 765, 870], # Marseille
+        [584, 645, 540, 505, 0, 250, 925, 800, 275, 530],  # Bordeaux
+        [678, 470, 540, 400, 250, 0, 885, 875, 560, 650],  # Toulouse
+        [492, 1025, 490, 800, 925, 885, 0, 480, 780, 840], # Strasbourg
+        [231, 1160, 645, 1000, 800, 875, 480, 0, 600, 285],# Lille
+        [385, 860, 600, 765, 275, 560, 780, 600, 0, 400],  # Nantes
+        [200, 950, 730, 870, 530, 650, 840, 285, 400, 0]   # Le Havre
     ]
 
     # Création de l'instance du problème
