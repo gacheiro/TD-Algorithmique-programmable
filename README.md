@@ -102,7 +102,7 @@ for perm in itertools.permutations(liste_des_villes):
     ...
 ```
 
-6. **[BONUS]** Implémentez une méthode pour l’heuristique du plus proche voisin - en partant d’une ville, on se déplace toujours vers la ville la plus proche qui n’a pas déjà été visitée.
+5. **[BONUS]** Implémentez une méthode pour l’heuristique du plus proche voisin - en partant d’une ville, on se déplace toujours vers la ville la plus proche qui n’a pas déjà été visitée.
 
 ## Testez les heuristiques pour trouver l'itinéraire le plus court pour visiter toutes les villes
 
