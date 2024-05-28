@@ -72,7 +72,7 @@ dist = matrices_des_distances[0][9]
     1. Implémentez le constructeur avec les attributs passés en paramètres.
     2. Implémentez une méthode pour récupérer le nom de la ville à partir de son identifiant.
     3. Implémentez une méthode pour récupérer la distance entre une ville a et une ville b.
-    4. Implémentez pour imprimer l'instance. C'est à dire, imprimer les villes à visiter.
+    4. Implémentez une méthode pour imprimer l'instance. C'est à dire, imprimer les villes à visiter.
 3. Définissez une classe **Itinéraire** pour représenter une séquence de visite des villes :
     1. Implémentez le constructeur prenant l'instance du problème et un ordre de visite des villes.
     2. Implémentez une méthode pour imprimer l'itinéraire en commençant par la première ville à visiter et en terminant par la dernière ville à visiter.
