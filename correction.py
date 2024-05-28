@@ -41,7 +41,7 @@ class Trajet:
 
     def imprimer_trajet(self):
         trajet_str = " -> ".join([self.instance.get_nom_ville(ville) for ville in self.ordre_visite])
-        print(f"Trajet : {trajet_str}")
+        print(f"Trajet : {trajet_str} -> {self.instance.get_nom_ville(self.ordre_visite[0])}")
 
     def calculer_distance_totale(self):
         distance_totale = 0
