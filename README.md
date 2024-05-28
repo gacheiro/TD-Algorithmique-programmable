@@ -110,4 +110,4 @@ for perm in itertools.permutations(liste_des_villes):
 2. Créez l'instance du problème en utilisant la liste des villes ainsi que la matrice des distances.
 3. Appelez la méthode pour imprimer l'instance du problème.
 4. Créez un objet de la classe **Algorithme** pour calculer l'itinéraire le plus court pour visiter toutes les villes.
-5. Appelez les différentes heuristiques implémentées dans la classe **Algorithme**. Pour chaque heuristique, faites une comparaison avec les autres en imprimant l'itinéraire total, en km, de la solution trouvée par l'heuristique.
+5. Appelez les différentes heuristiques implémentées dans la classe **Algorithme**. Pour chaque heuristique, faites une comparaison avec les autres en imprimant l'itinéraire et la distance totale parcourue, en km, de la solution trouvée par l'heuristique.
