@@ -114,7 +114,7 @@ for perm in itertools.permutations(liste_des_villes):
 
 # TD 6 (seconde partie)
 
-On poursuit le travail fait dans le TP précédent. Un code python reprenant les fonctionnalités
+On poursuit le travail fait dans le TD précédent. Un code python reprenant les fonctionnalités
 développées est disponible sur Eurêka.
 
 1. Implémentez une méthode d’affichage graphique dans les classes Data et Cycle. Elles
