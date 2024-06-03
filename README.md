@@ -127,8 +127,8 @@ possibilités de 2-Opt et applique le premier mouvement qui améliore la solutio
 modifie la solution courante et retourne un booléen indiquant si la solution courante
 a été améliorée. La recherche locale appelle l’exploration du voisinage tant qu’elle
 améliore la solution courante.
-    1. Implémenter la méthode mvt2opt(s) dans Algorithme.
-    2. Implémenter la méthode rechercheLocale(s) dans Algorithme.
+    1. Implémenter la méthode `mvt2opt(s)` dans Algorithme.
+    2. Implémenter la méthode `rechercheLocale(s)` dans Algorithme.
 
 3. La recherche locale s’arrête dès que la solution courante est un optimum local. Une
 manière simple de pallier ce défaut est d’utiliser une stratégie de type mutistart : à
