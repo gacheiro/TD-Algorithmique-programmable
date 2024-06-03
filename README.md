@@ -1,4 +1,4 @@
-# Premier TD évalué (ISEL 3 - Algorithmique programmable)
+# TD 6 (première partie - ISEL 3 - Algorithmique programmable)
 
 - Objectifs : Modéliser et résoudre un problème de Recherche Opérationnelle, implémenter des heuristiques et vérifier expérimentalement la complexité algorithmique.
 - Règles de base : Sauvegardez votre fichier régulièrement ; soyez rigoureux sur le nommage des classes, des variables et méthodes, etc. ; visez la simplicité ; testez le code, décomposez-le en fonctions / méthodes et ajoutez des commentaires.
@@ -111,3 +111,59 @@ for perm in itertools.permutations(liste_des_villes):
 3. Appelez la méthode pour imprimer l'instance du problème.
 4. Créez un objet de la classe **Algorithme** pour calculer l'itinéraire le plus court pour visiter toutes les villes.
 5. Appelez les différentes heuristiques implémentées dans la classe **Algorithme**. Pour chaque heuristique, faites une comparaison avec les autres en imprimant l'itinéraire et la distance totale parcourue, en km, de la solution trouvée par l'heuristique.
+
+# TD 6 (seconde partie)
+
+On poursuit le travail fait dans le TP précédent. Un code python reprenant les fonctionnalités
+développées est disponible sur Eurêka.
+
+1. Implémentez une méthode d’affichage graphique dans les classes Data et Cycle. Elles
+utiliseront les fonctionnalités de pyplot, cf. les commentaires plus bas.
+
+2. Implémentation d’une recherche locale : les mouvements de type 2-Opt permettent
+de générer une solution voisine de la solution courante en remplaçant 2 arêtes par 2
+autres. L’exploration du voisinage 2-Opt de la solution courante teste toutes les
+possibilités de 2-Opt et applique le premier mouvement qui améliore la solution. Il
+modifie la solution courante et retourne un booléen indiquant si la solution courante
+a été améliorée. La recherche locale appelle l’exploration du voisinage tant qu’elle
+améliore la solution courante.
+    1. Implémenter la méthode mvt2opt(s) dans Algorithme.
+    2. Implémenter la méthode rechercheLocale(s) dans Algorithme.
+
+3. La recherche locale s’arrête dès que la solution courante est un optimum local. Une
+manière simple de pallier ce défaut est d’utiliser une stratégie de type mutistart : à
+chaque itération, on génère une solution aléatoire que l’on optimise avec la recherche
+locale. On garde la meilleure solution obtenue. Implémenter la méthode
+multistart(nb_iter) dans Algorithme.
+
+4. Tracer un diagramme d’évolution de la qualité de la solution en fonction du temps de
+calcul pour les deux approches suivantes :
+    1. Multistart : à chaque fois que le record est amélioré, on note le temps de calcul
+associé
+    2. Idem, sans la recherche locale
+    3. Que note-t-on ?
+
+L’affichage de l’instance et de la solution utiliseront les fonctionnalités du package
+matplotlib.pyplot :
+
+```Python
+import matplotlib.pyplot as plt
+fig = plt.figure() # cree une figure
+plt.title(‘titre de la figure’) # ajoute un titre
+plt.xlabel(‘abscisses’) # ajoute le label des abscisses
+plt.ylabel(’ordonnees’) # ajoute le label des ordonnees
+plt.scatter(x,y) # affiche les points avec x et y, vecteurs des abscisses et des ordonnees
+plt.plot(x,y) #trace une ligne brisée reposant sur la séquence de points dans les vecteurs x et y
+fig.show() # affiche la figure -> dans l’onglet plot sous spyder
+```
+
+Le temps de calcul d’une fonction peut être obtenu en utilisant la fonction time() du
+package time. Elle retourne le temps courant en secondes. Il faut donc faire la
+différence entre le temps après la fonction et le temps avant la fonction :
+
+```Python
+import time
+debut = time.time()
+heuristique_1(instance)
+duree = time.time() - debut
+```
