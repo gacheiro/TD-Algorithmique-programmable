@@ -144,7 +144,7 @@ associé
     3. Que note-t-on ?
 
 L’affichage de l’instance et de la solution utiliseront les fonctionnalités du package
-matplotlib.pyplot :
+`matplotlib.pyplot` :
 
 ```Python
 import matplotlib.pyplot as plt
@@ -157,7 +157,7 @@ plt.plot(x,y) #trace une ligne brisée reposant sur la séquence de points dans 
 fig.show() # affiche la figure -> dans l’onglet plot sous spyder
 ```
 
-Le temps de calcul d’une fonction peut être obtenu en utilisant la fonction time() du
+Le temps de calcul d’une fonction peut être obtenu en utilisant la fonction `time()` du
 package time. Elle retourne le temps courant en secondes. Il faut donc faire la
 différence entre le temps après la fonction et le temps avant la fonction :
 
