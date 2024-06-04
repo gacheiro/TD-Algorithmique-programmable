@@ -117,7 +117,7 @@ for perm in itertools.permutations(liste_des_villes):
 On poursuit le travail fait dans le TD précédent. Un code python reprenant les fonctionnalités
 développées est disponible sur Eurêka.
 
-1. Implémentez une méthode d’affichage graphique dans les classes Data et Cycle. Elles
+1. Implémentez une méthode d’affichage graphique dans l'une des classes. Elles
 utiliseront les fonctionnalités de pyplot, cf. les commentaires plus bas.
 
 2. Implémentation d’une recherche locale : les mouvements de type 2-Opt permettent
